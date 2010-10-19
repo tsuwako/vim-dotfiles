@@ -1,5 +1,7 @@
 """Remember `"' is comment.
 
+call pathogen#runtime_append_all_bundles()
+
 """check .vimrc recursively
 set nocompatible
 set exrc
