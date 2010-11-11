@@ -104,6 +104,7 @@ inoremap <C-l> =><SPACE>
 let mapleader = ","
 
 "let g:snippetsEmu_key = "<S-Tab>"
+let g:snippets_dir = $HOME . "/.vim/mysnip" . "," . $HOME . "/.vim/bundle/snipmate/snippets"
 
 colorscheme desert
 
