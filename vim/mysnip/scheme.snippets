@@ -1,7 +1,7 @@
 snippet gosh
 	#!/usr/bin/env gosh
 
-snippet l
+snippet lambda
 	(lambda (${1})
 		(${2})${3})
 	${4}
@@ -19,3 +19,12 @@ snippet srfi
 snippet use
 	(use ${1})
 	${2}
+
+snippet let
+	(let ((${1:var} ${2:expr})
+				${3:vars})
+					${4:expr})
+
+snippet l1
+	(let1 ${1:var} ${2:expr}
+		${3:expr})
