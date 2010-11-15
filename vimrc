@@ -45,6 +45,9 @@ let howm_fileformat      = 'unix'
 let mygrepprg = 'grep'
 let MyGrep_ShellEncoding = 'utf-8'
 
+let g:QFixHowm_FoldingChapterTitle = 1
+let g:QFixHowm_FoldingPattern = '^=[^=]'
+
 let calendar_action = "QFixHowmCalendarDiary"
 let calendar_sign   = "QFixHowmCalendarSign"
 " autocmd BufNewFile,BufRead *.howm nnoremap ,<TAB> jjo
