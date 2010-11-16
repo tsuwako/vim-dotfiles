@@ -1,5 +1,3 @@
-"""Remember `"' is comment.
-
 call pathogen#runtime_append_all_bundles()
 
 """check .vimrc recursively
@@ -19,9 +17,6 @@ set nobackup showmode nonumber showmatch
 "set autowrite
 set hlsearch incsearch
 " set autochdir
-
-"""vim extension
-"set nocompatible
 
 " set ambiwidth=double
 
@@ -62,20 +57,7 @@ syntax on
 set background=dark
 set textwidth=78
 
-"""mapping
-"map ^h hx
-"map ^k D
-"map ^] :GtagsCursor
-
-"""ChangeLog setting
-let g:changelog_timeformat = "%Y-%m-%d"
-let g:changelog_username = "Manabu Morita  <tsuwako@gmail.com>"
-"" global mapping invoking changelog memo (open changelog && insert item)
-"map <silent> ,c <ESC>:n /home/mm/.memo/ChangeLog<CR> <ESC>,c
-
-"noremap <silent> <F11> :cal VimCommanderToggle()<CR> 
 noremap <silent> <F10> :TlistToggle<CR> 
-"noremap <silent> <C-@> :VTreeExplore<CR> 
 noremap <silent> <C-U> :cp<CR>
 noremap <silent> <C-D> :cn<CR>
 nnoremap <C-l>  :MBEbn<CR>
@@ -84,23 +66,8 @@ nnoremap g,d :Calendar<CR>
 
 cnoremap <C-A>		<Home>
 cnoremap <C-B>		<Left>
-"cnoremap <C-D>		<Del>
 cnoremap <C-E>		<End>
 cnoremap <C-F>		<Right>
-
-"haskell
-"let g:haddock_browser = "/usr/bin/firefox-3.5"
-"autocmd BufNewFile,BufRead *.hs nnoremap ,r :<C-u>!runghc %<CR>
-"autocmd BufNewFile,BufRead *.rb nnoremap ,r :<C-u>!ruby %<CR>
-"autocmd BufnewFile,BufRead *.hs inoremap <expr> - smartchr#one_of('->', '-')
-"autocmd BufnewFile,BufRead *.hs inoremap <expr> $ smartchr#one_of(' $ ', '$')
-
-" howm
-"autocmd BufNewFile,BufRead *.howm inoremap <C-]>  { } 
-"autocmd BufNewFile,BufRead *.howm imap     <C-d>  [<C-r>=strftime("%Y-%m-%d")<CR>]
-""autocmd BufNewFile,BufRead *.howm nmap g,n ggg,c
-"autocmd BufNewFile,BufRead *.howm nmap g,. ggg,c
-"autocmd BufNewFile,BufRead *.howm imap <C-n> <ESC>jjo
 
 " global
 inoremap <C-l> =><SPACE>
@@ -112,4 +79,3 @@ let g:snippets_dir = $HOME . "/.vim/mysnip" . "," . $HOME . "/.vim/bundle/snipma
 
 colorscheme desert
 
-"et treeExplVertical=1
