@@ -47,6 +47,7 @@ let MyGrep_ShellEncoding = 'utf-8'
 
 let g:QFixHowm_FoldingChapterTitle = 1
 let g:QFixHowm_FoldingPattern = '^=[^=]'
+let g:QFixHowm_DefaultSearchWord=0
 
 let calendar_action = "QFixHowmCalendarDiary"
 let calendar_sign   = "QFixHowmCalendarSign"
