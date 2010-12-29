@@ -77,5 +77,8 @@ let mapleader = ","
 "let g:snippetsEmu_key = "<S-Tab>"
 let g:snippets_dir = $HOME . "/.vim/mysnip" . "," . $HOME . "/.vim/bundle/snipmate/snippets"
 
+" abbreviations
+ab u8 # -*- encoding: UTF-8 -*-
+
 colorscheme desert
 
