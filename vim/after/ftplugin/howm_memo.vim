@@ -6,3 +6,5 @@ nmap <C-y> F<SPACE>ly$i[[<ESC>A]]<ESC>:w<CR>g,<SPACE>g,N<ESC>pjjo
 nmap g,X g,x:w<CR>g,<SPACE>Gp<CR>
 set previewheight=40
 "set nocindent noautoindent nosmartindent
+
+:AcpDisable
