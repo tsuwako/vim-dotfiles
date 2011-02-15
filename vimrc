@@ -10,10 +10,9 @@ set fenc=utf-8
 set fencs=utf-8,iso-2022-jp,euc-jp,cp932
 
 """indent setting
-set tabstop=2 shiftwidth=2 st=2 expandtab
+set tabstop=2 shiftwidth=2 sts=2 expandtab
 set autoindent smartindent
-"set cindent
-set nobackup showmode nonumber showmatch
+"set cindent set nobackup showmode nonumber showmatch
 "set autowrite
 set hlsearch incsearch
 " set autochdir
@@ -22,10 +21,17 @@ set hlsearch incsearch
 
 "autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
 
+autocmd BufWinEnter *.rb :TlistOpen
+autocmd BufWinEnter *.py :TlistOpen
+autocmd BufWinEnter *.java :TlistOpen
+
 """misc setting
 set ruler
 set shortmess+=I
 set laststatus=1
+
+"""pattern to ignore
+set wildignore+=*.o,*.pyc,.git,a.out,*.so
 
 """Import etc...
 "runtime ftplugin/man.vim
@@ -64,13 +70,18 @@ nnoremap <C-l>  :MBEbn<CR>
 nnoremap <C-h>  :MBEbp<CR>
 nnoremap g,d :Calendar<CR>
 
-cnoremap <C-A>		<Home>
-cnoremap <C-B>		<Left>
-cnoremap <C-E>		<End>
-cnoremap <C-F>		<Right>
+inoremap <C-a>		<Home>
+inoremap <C-b>		<Left>
+inoremap <C-e>		<End>
+inoremap <C-f>		<Right>
 
 " global
 inoremap <C-l> =><SPACE>
+inoremap ( ()<Left>
+inoremap [ []<Left>
+inoremap { {}<Left>
+inoremap " ""<Left>
+inoremap ' ''<Left>
 
 let mapleader = ","
 
