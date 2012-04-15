@@ -52,3 +52,6 @@
 [submodule "vim/bundle/vim-autocomplpop"]
 	path = vim/bundle/vim-autocomplpop
 	url = git://github.com/vim-scripts/AutoComplPop.git
+[submodule "vim/bundle/vim-cctree"]
+	path = vim/bundle/vim-cctree
+	url = git://github.com/vim-scripts/CCTree.git
