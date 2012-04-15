@@ -15,15 +15,18 @@ set autoindent smartindent
 "set cindent set nobackup showmode nonumber showmatch
 "set autowrite
 set hlsearch incsearch
+set ofu=syntaxcomplete#Complete
 " set autochdir
 
 " set ambiwidth=double
 
 "autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
 
-autocmd BufWinEnter *.rb :TlistOpen
-autocmd BufWinEnter *.py :TlistOpen
-autocmd BufWinEnter *.java :TlistOpen
+" autocmd BufWinEnter *.rb :TlistOpen
+" autocmd BufWinEnter *.py :TlistOpen
+" autocmd BufWinEnter *.java :TlistOpen
+
+autocmd BufWinEnter *.R :set ft=r
 
 """misc setting
 set ruler
@@ -77,11 +80,11 @@ inoremap <C-f>		<Right>
 
 " global
 inoremap <C-l> =><SPACE>
-inoremap ( ()<Left>
-inoremap [ []<Left>
-inoremap { {}<Left>
-inoremap " ""<Left>
-inoremap ' ''<Left>
+" inoremap ( ()<Left>
+" inoremap [ []<Left>
+" inoremap { {}<Left>
+" inoremap " ""<Left>
+" inoremap ' ''<Left>
 
 let mapleader = ","
 
