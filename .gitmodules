@@ -61,3 +61,6 @@
 [submodule "vim/bundle/vim-minibuexpl"]
 	path = vim/bundle/vim-minibuexpl
 	url = git://github.com/fholgado/minibufexpl.vim.git
+[submodule "vim/bundle/vim-trinity"]
+	path = vim/bundle/vim-trinity
+	url = git://github.com/vim-scripts/Trinity
