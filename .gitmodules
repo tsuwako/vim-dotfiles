@@ -64,3 +64,18 @@
 [submodule "vim/bundle/vim-trinity"]
 	path = vim/bundle/vim-trinity
 	url = git://github.com/vim-scripts/Trinity
+[submodule "vim/bundle/vim-tagbar"]
+	path = vim/bundle/vim-tagbar
+	url = git://github.com/majutsushi/tagbar.git
+[submodule "vim/bundle/vim-unite"]
+	path = vim/bundle/vim-unite
+	url = git://github.com/Shougo/unite.vim.git
+[submodule "vim/bundle/vim-unite-mark"]
+	path = vim/bundle/vim-unite-mark
+	url = git://github.com/tacroe/unite-mark.git
+[submodule "vim/bundle/vim-pyte"]
+	path = vim/bundle/vim-pyte
+	url = git://github.com/therubymug/vim-pyte.git
+[submodule "vim/bundle/vim-molokai"]
+	path = vim/bundle/vim-molokai
+	url = git://github.com/tomasr/molokai.git

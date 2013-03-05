@@ -16,7 +16,7 @@ set autoindent smartindent
 "set autowrite
 set hlsearch incsearch
 set ofu=syntaxcomplete#Complete
-" set autochdir
+set autochdir
 
 " set ambiwidth=double
 
@@ -39,6 +39,7 @@ set wildignore+=*.o,*.pyc,.git,a.out,*.so
 """Import etc...
 "runtime ftplugin/man.vim
 set runtimepath+=$HOME/.vim/qfixapp
+" set path+=.
 
 "" QFixHowm Setting
 let QFixHowm_Key = 'g'
@@ -63,19 +64,23 @@ syntax on
 
 """color setting
 "colorscheme Blacksea
-set background=dark
 set textwidth=78
 
-noremap <silent> <F10> :TlistToggle<CR> 
+noremap <silent> <C-e> :TagbarOpen<CR>
+noremap <silent> <C-c><C-e> :TagbarToggle<CR>
+noremap <silent> <C-a> :NERDTree<CR>
+noremap <silent> <C-c><C-a> :NERDTreeToggle<CR>
+noremap <silent> <C-c><C-b> :Unite buffer file<CR>
+noremap <silent> <C-c><C-j> :Unite bookmark<CR>
 noremap <silent> <C-U> :cp<CR>
 noremap <silent> <C-D> :cn<CR>
 nnoremap <C-l>  :MBEbn<CR>
 nnoremap <C-h>  :MBEbp<CR>
 nnoremap g,d :Calendar<CR>
 
-inoremap <C-a>		<Home>
-inoremap <C-b>		<Left>
-inoremap <C-e>		<End>
+" inoremap <C-a>		<Home>
+" inoremap <C-b>		<Left>
+" inoremap <C-e>		<End>
 inoremap <C-f>		<Right>
 
 " global
@@ -94,5 +99,6 @@ let g:snippets_dir = $HOME . "/.vim/mysnip" . "," . $HOME . "/.vim/bundle/snipma
 " abbreviations
 ab u8 # -*- encoding: UTF-8 -*-
 
-colorscheme desert
+colorscheme molokai
+set background=light
 
