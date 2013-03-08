@@ -52,3 +52,6 @@
 [submodule "vim/bundle/vim-molokai"]
 	path = vim/bundle/vim-molokai
 	url = git://github.com/tomasr/molokai.git
+[submodule "vim/bundle/vim-nerdtree"]
+	path = vim/bundle/vim-nerdtree
+	url = git://github.com/scrooloose/nerdtree.git
