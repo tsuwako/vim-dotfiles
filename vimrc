@@ -68,7 +68,7 @@ set textwidth=78
 
 noremap <silent> <C-e> :TagbarOpen<CR>
 noremap <silent> <C-c><C-e> :TagbarToggle<CR>
-noremap <silent> <C-a> :NERDTree<CR>
+" noremap <silent> <C-a> :NERDTree<CR>
 noremap <silent> <C-c><C-a> :NERDTreeToggle<CR>
 noremap <silent> <C-c><C-b> :Unite buffer file<CR>
 noremap <silent> <C-c><C-j> :Unite bookmark<CR>
