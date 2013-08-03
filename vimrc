@@ -27,6 +27,7 @@ set autochdir
 " autocmd BufWinEnter *.java :TlistOpen
 
 autocmd BufWinEnter *.R :set ft=r
+autocmd BufWinEnter *.coffee :set ft=coffee
 
 """misc setting
 set ruler
